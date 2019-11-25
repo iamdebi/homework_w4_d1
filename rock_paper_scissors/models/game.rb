@@ -8,6 +8,8 @@ class Game
         return "paper wins"
       when "scissors"
         return "rock wins"
+      when "rock"
+        return "rock draw"
       end
     when "scissors"
       case item2
@@ -15,6 +17,8 @@ class Game
         return "scissors wins"
       when "rock"
         return "rock wins"
+      when "scissors"
+        return "scissors draw"
       end
     when "paper"
       case item2
@@ -22,6 +26,8 @@ class Game
         return "paper wins"
       when "scissors"
         return "scissors wins"
+      when "paper"
+        return "paper draw"
       end
     end
   end
