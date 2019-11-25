@@ -1,34 +1,21 @@
 class Game
 
-  def self.winner(item1, item2)
-    case item1
-    when "rock"
-      case item2
-      when  "paper"
-        return "paper wins"
-      when "scissors"
-        return "rock wins"
-      when "rock"
-        return "rock draw"
-      end
-    when "scissors"
-      case item2
-      when "paper"
-        return "scissors wins"
-      when "rock"
-        return "rock wins"
-      when "scissors"
-        return "scissors draw"
-      end
-    when "paper"
-      case item2
-      when "rock"
-        return "paper wins"
-      when "scissors"
-        return "scissors wins"
-      when "paper"
-        return "paper draw"
-      end
+  def self.winner(player1, player2)
+    case
+      when player1 == player2
+        return "it's a draw"
+      when player1 == "rock" && player2 == "paper"
+        return "Player 2 wins"
+      when player1 == "rock" && player2 == "scissors"
+        return "Player 1 wins"
+      when player1 = "scissors" && player2 == "paper"
+        return "Player 1 wins"
+      when player1 = "scissors" && player2 == "rock"
+        return "Player 2 wins"
+      when player1 ="paper" && player2 == "rock"
+        return "Player 1 wins"
+      when player1 ="paper" && player2 == "scissors"
+        return "Player 2 wins"
     end
   end
 

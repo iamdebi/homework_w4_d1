@@ -1,0 +1,44 @@
+body {
+  background-color: #FFA81E;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+h2 {
+  text-align: center;
+
+}
+
+p {
+  text-align: center;
+  color: green;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+li {
+  flex-direction: row;
+  padding: 20px;
+  font-size: 20px;
+  color: teal;
+}
+
+a {
+  text-decoration: none;
+  color: #00A0C6;
+}
+
+a:hover
+{
+     color:#00A0C6;
+     text-decoration:none;
+     cursor:pointer;
+}
