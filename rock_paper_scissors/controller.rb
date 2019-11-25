@@ -10,3 +10,11 @@ get '/game/:item1/:item2' do
   @results = Game.winner(item1, item2)
   erb(:results)
 end
+
+get '/' do
+  erb(:home)
+end
+
+get '/rules' do
+  erb(:rules)
+end
